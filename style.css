@@ -1,0 +1,450 @@
+/* Osnovni stilovi za telo stranice */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* Stil fonta */
+    margin: 0;
+    /* Bez margina */
+    padding: 0;
+    /* Bez paddinga */
+    background-color: #2c462f;
+    /* Boja pozadine */
+    color: #ffffff;
+    /* Boja teksta */
+}
+
+/* Stilovi za navigacioni bar */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sjena ispod navigacionog bara */
+    background-color: #2c462f;
+    /* Boja pozadine navigacionog bara */
+    border-radius: 10px;
+    /* Zaobljeni uglovi */
+    padding: 10px;
+    /* Unutrašnji razmaci */
+    display: flex;
+    /* Koristi flexbox za raspored */
+    justify-content: center;
+    /* Centriraj sadržaj */
+}
+
+/* Stilovi za brend unutar navigacionog bara */
+.navbar-brand {
+    display: flex;
+    /* Koristi flexbox za raspored */
+    align-items: center;
+    /* Vertikalno centriraj sadržaj */
+}
+
+/* Stilovi za ikonu u navigacionom baru */
+.navbar-icon {
+    font-size: 24px;
+    /* Povećava veličinu ikone */
+    color: #181818;
+    /* Postavlja boju ikone na crnu */
+}
+
+/* Stilovi za linkove u navigacionom baru */
+.nav-link {
+    color: #fff !important;
+    /* Boja linkova (važna deklaracija) */
+    margin: 0 15px;
+    /* Horizontalni razmak */
+    text-decoration: none;
+    /* Bez podvlačenja */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Sjena teksta */
+}
+
+/* Stilovi za početnu stranicu (landing page) */
+.landing-page {
+    height: 100vh;
+    /* Visina stranice */
+    display: flex;
+    /* Koristi flexbox za raspored */
+    justify-content: center;
+    /* Centriraj horizontalno */
+    align-items: center;
+    /* Centriraj vertikalno */
+    position: relative;
+    /* Relativna pozicija */
+    overflow: hidden;
+    /* Sakrij prelijevanje */
+    flex-direction: row;
+    /* Redosled elemenata u redu */
+}
+
+/* Stilovi za pozadinski video */
+#background-video {
+    position: absolute;
+    /* Apsolutna pozicija */
+    top: 50%;
+    /* Centriraj vertikalno */
+    left: 50%;
+    /* Centriraj horizontalno */
+    min-width: 100%;
+    /* Minimalna širina */
+    min-height: 100%;
+    /* Minimalna visina */
+    width: auto;
+    /* Automatska širina */
+    height: auto;
+    /* Automatska visina */
+    z-index: 0;
+    /* Z-index za pozadinu */
+    transform: translate(-50%, -50%);
+    /* Prevedi za centriranje */
+}
+
+/* Stilovi za sadržaj početne stranice */
+.landing-content {
+    display: flex;
+    /* Koristi flexbox za raspored */
+    justify-content: center;
+    /* Centriraj horizontalno */
+    align-items: center;
+    /* Centriraj vertikalno */
+    width: 100%;
+    /* Puna širina */
+    padding: 0 50px;
+    /* Horizontalni padding */
+    position: relative;
+    /* Relativna pozicija */
+    z-index: 1;
+    /* Z-index za sloj iznad pozadine */
+}
+
+/* Stilovi za tekstualni kontejner */
+.text-container {
+    margin-top: 60px;
+    /* Gornji margin */
+    text-align: center;
+    /* Centriraj tekst */
+    flex: 1;
+    /* Flex širenje */
+}
+
+/* Stilovi za profilnu sliku */
+.profile-img {
+    border-radius: 50%;
+    /* Zaobljeni uglovi (krug) */
+    width: 150px;
+    /* Širina slike */
+    height: 150px;
+    /* Visina slike */
+    object-fit: cover;
+    /* Prilagodi sliku */
+    border: 1px solid #2c462f;
+    /* Obrub slike */
+    margin-bottom: 20px;
+    /* Donji margin */
+}
+
+/* Stilovi za naslov */
+h1.display-4 {
+    font-size: 3em;
+    /* Veličina fonta */
+    margin-bottom: 10px;
+    /* Donji margin */
+    color: #fff;
+    /* Boja teksta */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 0, 0, 0.8);
+    /* Sjena teksta */
+}
+
+/* Stilovi za podnaslov */
+p.lead {
+    font-size: 1.5em;
+    /* Veličina fonta */
+    color: #ffdd57;
+    /* Boja teksta */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9), 0 0 10px;
+    /* Sjena teksta */
+}
+
+/* Stilovi za društvene ikone */
+.social-container {
+    display: flex;
+    /* Koristi flexbox za raspored */
+    flex-direction: column;
+    /* Vertikalni raspored */
+    align-items: flex-start;
+    /* Poravnaj levo */
+    position: absolute;
+    /* Apsolutna pozicija */
+    left: 20px;
+    /* Levo pozicioniranje */
+    margin-top: 20%;
+    /* Gornji margin */
+}
+
+.social-list {
+    list-style: none;
+    /* Bez stilova liste */
+    padding: 0;
+    /* Bez paddinga */
+    margin: 0;
+    /* Bez margina */
+}
+
+.social {
+    margin: 10px 0;
+    /* Vertikalni razmak */
+}
+
+/* Stilovi za linkove društvenih mreža */
+.social a {
+    color: #fff;
+    /* Boja linkova */
+    font-size: large;
+    /* Veličina fonta */
+    text-decoration: none;
+    /* Bez podvlačenja */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.7);
+    /* Sjena teksta */
+}
+
+/* Stilovi za sekciju "About Me" */
+#about {
+    background-color: #2c462f;
+    /* Boja pozadine */
+    padding: 60px 0;
+    /* Vertikalni padding */
+}
+
+.about-text {
+    font-size: 15px;
+    /* Veličina fonta */
+    max-width: 600px;
+    /* Maksimalna širina */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Stil fonta */
+}
+
+.about-img {
+    max-width: 100%;
+    /* Maksimalna širina */
+    border-radius: 10px;
+    /* Zaobljeni uglovi */
+    border: 1px solid #000000;
+    /* Obrub slike */
+}
+
+/* Stilovi za kontejner sa animiranim tekstom */
+.typed-text-container {
+    font-size: 24px;
+    /* Veličina fonta */
+    font-weight: bold;
+    /* Debljina fonta */
+    color: #ffdd57;
+    /* Boja teksta */
+    text-align: left;
+    /* Levo poravnanje */
+    padding: 20px;
+    /* Unutrašnji razmaci */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Sjena teksta */
+}
+
+/* Stilovi za drugi tekst */
+#second-text {
+    padding-left: 30px;
+    /* Levi padding */
+    font-style: italic;
+    /* Italik stil */
+    padding-bottom: 20px;
+    /* Donji padding */
+    color: #ffdd57;
+    /* Boja teksta */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Sjena teksta */
+    padding-bottom: 30px;
+    /* Donji padding */
+}
+
+/* Stilovi za sekciju "Skills" */
+.skills {
+    background-color: #f4f4f9;
+    /* Boja pozadine */
+    padding: 60px 0;
+    /* Vertikalni padding */
+}
+
+/* Stilovi za naslov sekcije */
+.section-title {
+    font-size: 36px;
+    /* Veličina fonta */
+    color: #2c462f;
+    /* Boja teksta */
+    text-align: center;
+    /* Centriraj tekst */
+    margin-bottom: 40px;
+    /* Donji margin */
+}
+
+/* Stilovi za kontejner sa bedževima */
+.badge-container {
+    display: flex;
+    /* Koristi flexbox za raspored */
+    flex-wrap: wrap;
+    /* Prelomi u novi red */
+    justify-content: center;
+    /* Centriraj sadržaj */
+    gap: 15px;
+    /* Razmak između bedževa */
+}
+
+/* Stilovi za bedževe */
+.badge {
+    background-color: #ffdd57;
+    /* Boja pozadine */
+    color: #333;
+    /* Boja teksta */
+    padding: 10px 20px;
+    /* Unutrašnji razmaci */
+    border-radius: 25px;
+    /* Zaobljeni uglovi */
+    font-size: 16px;
+    /* Veličina fonta */
+    font-weight: bold;
+    /* Debljina fonta */
+}
+
+/* Stilovi za sekciju "Contact" */
+.contact {
+    background-color: #2c462f;
+    /* Boja pozadine */
+    padding: 60px 0;
+    /* Vertikalni padding */
+}
+
+/* Stilovi za naslov sekcije "Contact" */
+.section-title-contact {
+    font-size: 36px;
+    /* Veličina fonta */
+    color: #ffdd57;
+    /* Boja teksta */
+    text-align: center;
+    /* Centriraj tekst */
+    margin-bottom: 20px;
+    /* Donji margin */
+}
+
+/* Stilovi za podnaslov sekcije "Contact" */
+.section-subtitle {
+    font-size: 18px;
+    /* Veličina fonta */
+    color: #fdfcfc;
+    /* Boja teksta */
+    text-align: center;
+    /* Centriraj tekst */
+    margin-bottom: 40px;
+    /* Donji margin */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Sjena teksta */
+}
+
+/* Stilovi za formu za kontakt */
+.contact-form {
+    background-color: #fff;
+    /* Boja pozadine */
+    padding: 30px;
+    /* Unutrašnji razmaci */
+    border-radius: 10px;
+    /* Zaobljeni uglovi */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sjena kutije */
+}
+
+/* Stilovi za informacije za kontakt */
+.contact-info {
+    padding-top: 0px;
+    /* Gornji padding */
+    padding-left: 150px;
+    /* Levi padding */
+    margin-top: 40px;
+    /* Gornji margin */
+    font-size: 16px;
+    /* Veličina fonta */
+    color: #f7f5f5;
+    /* Boja teksta */
+}
+
+.contact-info p {
+    margin: 10px 0;
+    /* Vertikalni margini */
+}
+
+.contact-info i {
+    margin-right: 10px;
+    /* Desni margini */
+    color: #ffdd57;
+    /* Boja ikone */
+}
+
+/* Stilovi za društvene ikone */
+.social-icons {
+    margin-top: 20px;
+    /* Gornji margin */
+}
+
+.social-icons a {
+    font-size: 24px;
+    /* Veličina fonta */
+    color: #555;
+    /* Boja ikone */
+    margin-right: 15px;
+    /* Desni margini */
+    transition: color 0.3s;
+    /* Tranzicija boje */
+}
+
+.social-icons a:hover {
+    color: #ffdd57;
+    /* Boja ikone pri prelasku mišem */
+}
+
+/* Prilagodbe za manje ekrane */
+@media (max-width: 767px) {
+
+    .contact-form,
+    .contact-info {
+        margin-top: 20px;
+        /* Gornji margini */
+    }
+
+    .contact-form {
+        padding: 20px;
+        /* Unutrašnji razmaci */
+    }
+}
+
+/* Stilovi za osnovno dugme */
+.btn-primary {
+    background-color: #ffdd57;
+    /* Boja pozadine */
+    color: #2c462f;
+    /* Boja teksta */
+    border-radius: 2em;
+    /* Zaobljeni uglovi */
+    padding: 10px 20px;
+    /* Unutrašnji razmaci */
+    font-size: 16px;
+    /* Veličina fonta */
+    cursor: pointer;
+    /* Pokazivač */
+    transition: background-color 0.3s ease;
+    /* Tranzicija boje */
+    border-color: #ffdd57;
+    /* Boja obruba */
+}
+
+/* Stilovi za hover efekt na dugmetu */
+.btn-primary:hover {
+    background-color: #2c462f;
+    /* Boja pozadine pri prelasku mišem */
+    color: #ffdd57;
+    /* Boja teksta pri prelasku mišem */
+    border-color: #ffdd57;
+    /* Boja obruba pri prelasku mišem */
+}
